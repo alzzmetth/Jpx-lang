@@ -1,0 +1,39 @@
+```gitattributes
+# Normalize line endings
+* text=auto eol=lf
+
+# JPX source files
+*.jpx linguist-language=Zig
+*.jpx linguist-detectable=true
+*.jpx diff
+*.jpx text
+
+# Markdown documentation
+*.md text diff=markdown
+
+# Configuration files
+*.yml text
+*.yaml text
+*.json text
+*.toml text
+
+# Shell scripts
+*.sh text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.exe binary
+*.zip binary
+*.dll binary
+
+# Ignore generated files in language stats
+dist/* linguist-generated=true
+build/* linguist-generated=true
+
+# Documentation should count as docs
+docs/* linguist-documentation=true
+wiki/* linguist-documentation=true
+```
