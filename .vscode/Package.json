@@ -1,0 +1,45 @@
+```json
+{
+  "name": "jpx-language",
+  "displayName": "JPX Language",
+  "description": "Official JPX language support",
+  "version": "1.0.0",
+  "publisher": "alzzmetth",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "jpx",
+    "jaguar",
+    "programming",
+    "language"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jpx",
+        "aliases": ["JPX", "jpx"],
+        "extensions": [".jpx"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jpx",
+        "scopeName": "source.jpx",
+        "path": "./syntaxes/jpx.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "jpx",
+        "path": "./snippets/jpx.json"
+      }
+    ]
+  }
+}
+```
