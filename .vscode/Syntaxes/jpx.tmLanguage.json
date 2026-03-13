@@ -1,0 +1,17 @@
+{
+  "scopeName": "source.jpx",
+  "patterns": [
+    {
+      "match": "\\b(Print|Global|try|Catch|if|else|while|function|return)\\b",
+      "name": "keyword.control.jpx"
+    },
+    {
+      "match": "\".*?\"",
+      "name": "string.quoted.double.jpx"
+    },
+    {
+      "match": "//.*$",
+      "name": "comment.line.jpx"
+    }
+  ]
+}
